@@ -6,6 +6,7 @@ import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
+import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -15,6 +16,7 @@ import com.example.base.model.MyObjectForRecyclerView
 import com.example.base.model.ObjectDataHeaderSample
 import com.example.base.model.ObjectDataSample
 import view.AndroidVersionViewModel
+import kotlin.random.Random
 
 class RecyclerViewActivity: AppCompatActivity() {
 
@@ -26,7 +28,6 @@ class RecyclerViewActivity: AppCompatActivity() {
     private val androidVersionListObserver = Observer<List<MyObjectForRecyclerView>> {
         adapter.submitList(it)
     }
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -49,6 +50,9 @@ class RecyclerViewActivity: AppCompatActivity() {
 
         // We set the adapter to recycler view
         binding.recyclerView.adapter = adapter
+
+        binding.buttonAddItem.setOnClickListener { addRandomAndroidVersion() }
+        binding.buttondel?.setOnClickListener { deleteAndroidVersion() }
     }
 
 
@@ -56,7 +60,6 @@ class RecyclerViewActivity: AppCompatActivity() {
         super.onStart()
         viewModel.androidVersionList.observe(this, androidVersionListObserver)
     }
-
 
     override fun onStop() {
         super.onStop()
@@ -67,6 +70,15 @@ class RecyclerViewActivity: AppCompatActivity() {
         view.performHapticFeedback(HapticFeedbackConstants.VIRTUAL_KEY)
         Toast.makeText(this, objectDataSample.versionName, Toast.LENGTH_LONG).show()
     }
+    private fun addRandomAndroidVersion() {
+        val random = Random.nextInt(0, 1000)
+        viewModel.insertAndroidVersion("Android $random", random, "url:$random")
+    }
 
+    private fun deleteAndroidVersion() {
+        viewModel.deleteAllAndroidVersion()
+    }
 
 }
+
+
