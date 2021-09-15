@@ -5,6 +5,7 @@
       <map>
         <entry key="app/src/main/res/drawable/custom_background.xml" value="0.321025641025641" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.321025641025641" />
+        <entry key="app/src/main/res/layout-land/activity_recycler_view.xml" value="0.1419753086419753" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.14583333333333334" />
         <entry key="app/src/main/res/layout/activity_recycler_view.xml" value="0.14583333333333334" />
         <entry key="app/src/main/res/layout/item _custom_recycler.xml" value="0.13994565217391305" />

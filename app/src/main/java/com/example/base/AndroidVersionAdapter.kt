@@ -6,6 +6,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import com.example.base.databinding.ItemCustomRecyclerBinding
 import com.example.base.databinding.ItemCustomRecyclerHeaderBinding
 import com.example.base.model.MyObjectForRecyclerView
@@ -97,10 +98,15 @@ class AndroidVersionAdapter(
             }
         }
 
+
         fun bind(objectDataSample: ObjectDataSample) {
             ui = objectDataSample
             binding.itemRecyclerViewVersionName.text = objectDataSample.versionName
             binding.itemRecyclerViewVersionCode.text = "${objectDataSample.versionCode}"
+            Glide.with(itemView.context)
+                .load(objectDataSample.versionImage)
+                .placeholder(R.drawable.ic_launcher_background)
+                .into(binding.itemRecyclerViewVersionImage)
 
         }
 

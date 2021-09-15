@@ -6,7 +6,8 @@ sealed class MyObjectForRecyclerView()
 
 data class ObjectDataSample(
     val versionName : String,
-    val versionCode : Int
+    val versionCode : Int,
+    val versionImage : String
 ) : MyObjectForRecyclerView()
 
 
