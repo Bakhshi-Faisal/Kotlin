@@ -1,10 +1,10 @@
-package view
+package oldFeatures.view
 
-import Repository.AndroidVersionRepository
+import oldFeatures.Repository.AndroidVersionRepository
 import androidx.lifecycle.*
-import com.example.base.model.MyObjectForRecyclerView
-import com.example.base.model.ObjectDataHeaderSample
-import com.example.base.model.ObjectDataSample
+import oldFeatures.com.example.base.model.MyObjectForRecyclerView
+import oldFeatures.com.example.base.model.ObjectDataHeaderSample
+import oldFeatures.com.example.base.model.ObjectDataSample
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 

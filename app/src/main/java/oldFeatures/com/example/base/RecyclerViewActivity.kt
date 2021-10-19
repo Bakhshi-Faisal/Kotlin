@@ -1,4 +1,4 @@
-package com.example.base
+package oldFeatures.com.example.base
 
 import android.os.Bundle
 import android.view.HapticFeedbackConstants
@@ -10,12 +10,12 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.base.AndroidVersionAdapter
+import oldFeatures.com.example.base.AndroidVersionAdapter
 import com.example.base.databinding.ActivityRecyclerViewBinding
-import com.example.base.model.MyObjectForRecyclerView
-import com.example.base.model.ObjectDataHeaderSample
-import com.example.base.model.ObjectDataSample
-import view.AndroidVersionViewModel
+import oldFeatures.com.example.base.model.MyObjectForRecyclerView
+import oldFeatures.com.example.base.model.ObjectDataHeaderSample
+import oldFeatures.com.example.base.model.ObjectDataSample
+import oldFeatures.view.AndroidVersionViewModel
 import kotlin.random.Random
 
 class RecyclerViewActivity: AppCompatActivity() {

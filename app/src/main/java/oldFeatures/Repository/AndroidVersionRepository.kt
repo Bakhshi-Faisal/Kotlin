@@ -1,11 +1,11 @@
-package Repository
+package oldFeatures.Repository
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.map
 
 import architecture.CustomApplication
-import com.example.base.model.LocalDataObjetSample
-import com.example.base.model.ObjectDataSample
+import oldFeatures.com.example.base.model.LocalDataObjetSample
+import oldFeatures.com.example.base.model.ObjectDataSample
 
 class AndroidVersionRepository {
     private val mAndroidVersionDao =

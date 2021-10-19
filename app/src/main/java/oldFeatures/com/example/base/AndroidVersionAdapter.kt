@@ -1,4 +1,4 @@
-package com.example.base
+package oldFeatures.com.example.base
 
 import android.view.LayoutInflater
 import android.view.View
@@ -7,11 +7,12 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.example.base.R
 import com.example.base.databinding.ItemCustomRecyclerBinding
 import com.example.base.databinding.ItemCustomRecyclerHeaderBinding
-import com.example.base.model.MyObjectForRecyclerView
-import com.example.base.model.ObjectDataHeaderSample
-import com.example.base.model.ObjectDataSample
+import oldFeatures.com.example.base.model.MyObjectForRecyclerView
+import oldFeatures.com.example.base.model.ObjectDataHeaderSample
+import oldFeatures.com.example.base.model.ObjectDataSample
 
 
 private val diffItemUtils = object : DiffUtil.ItemCallback<MyObjectForRecyclerView>() {

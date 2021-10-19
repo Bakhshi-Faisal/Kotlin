@@ -1,4 +1,4 @@
-package com.example.base.model
+package oldFeatures.com.example.base.model
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey

@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="RecyclerViewActivity">
+    tools:context="oldFeatures.com.example.base.RecyclerViewActivity">
 
 
     <androidx.constraintlayout.widget.Guideline
